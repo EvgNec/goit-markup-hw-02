@@ -28,7 +28,7 @@ body {
 }
 
 .card-image.no-gap {
-    display: block;
+    display: inline-block;
 }
 
 .card-heading {
@@ -36,4 +36,67 @@ body {
     padding: 20px;
     font-weight: 500;
     background-color: #03a9f4;
+}
+
+.link {
+    display: inline-block;
+    padding: 16px 32px;
+
+    border-radius: 3px;
+    background-color: teal;
+    color: white;
+
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.pane {
+    display: none;
+    padding: 8px;
+    border: 1px solid blue;
+    border-radius: 3px;
+}
+
+.is-active {
+    display: block;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.menu>.menu-item {
+    display: inline-block;
+    vertical-align: top;
+    opacity: 1;
+}
+
+.sub-menu .menu-item {
+    opacity: 0;
+    margin-left: 100px;
+}
+
+.menu-item:hover .menu-item {
+    opacity: 1;
+}
+
+.box {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+.red {
+    background: rgb(255, 0, 0);
+}
+
+.green {
+    background: rgb(0, 255, 0);
+}
+
+.blue {
+    background: rgb(0, 0, 255);
 }
