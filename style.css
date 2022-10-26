@@ -100,3 +100,24 @@ ul {
 .blue {
     background: rgb(0, 0, 255);
 }
+
+.box1::before {
+    content: 'Это текст в ::before';
+    font-size: 40px;
+    color: orange;
+}
+
+.box1::after {
+    content: 'Это текст в ::after';
+    font-size: 30px;
+    color: teal;
+}
+
+.box1:hover::before {
+    color: green;
+}
+
+/* Применить стили к псевдоэлементу .box::after при ховере по элементу .box */
+.box1:hover::after {
+    color: tomato;
+}
