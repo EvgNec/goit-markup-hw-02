@@ -43,12 +43,23 @@ ul {
     color: var(--secondary-black-color);
 }
 
+.site-nav .link.current {
+    color: var(--accent_color);
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent_color);
 }
 
 .auth-nav {}
+
+/* шапка */
+.button {
+    color: var(--primary-white-color);
+    background-color: var(--accent_color);
+    border: none;
+}
 
 /* section */
 .section {
