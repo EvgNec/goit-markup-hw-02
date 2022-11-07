@@ -8,7 +8,7 @@
     /* вторичний чорний колір*/
     --secondary-black-color: #000000;
     /* вторичний чорний колір*/
-    --secondary-black-color-opacity: rgba(255, 255, 255, 0.6);
+    --secondary-white-color-opacity: rgba(255, 255, 255, 0.6);
     /* колір акценту*/
     --accent_color: #2196F3;
 
@@ -29,30 +29,44 @@ ul {
     list-style: none;
 }
 
-.logo {
+.logo-black {
     color: var(--secondary-black-color);
 }
 
-.logo:hover,
-.logo:focus {
+.logo-black:hover,
+.logo-black:focus {
     color: var(--accent_color);
 }
+
+.logo-white {
+    color: var(--primary-white-color);
+}
+
+.logo-white:hover,
+.logo-white:focus {
+    color: var(--accent_color);
+}
+
 
 /* site-nav */
 .site-nav .link {
     color: var(--secondary-black-color);
 }
 
+.site-nav .link:hover,
+.site-nav .link:focus,
 .site-nav .link.current {
     color: var(--accent_color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--accent_color);
+.auth-nav .link {
+    color: var(--secondary-black-color);
 }
 
-.auth-nav {}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+    color: var(--accent_color);
+}
 
 /* шапка */
 .button {
@@ -87,6 +101,13 @@ ul {
 }
 
 /* footer */
-footer {
+.footer {
+    color: var(--primary-white-color);
     background-color: var(--primari-black-bg-color);
 }
+
+.opacity-color {
+    color: var(--secondary-white-color-opacity);
+}
+
+.portfolio-nav .link {}
