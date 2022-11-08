@@ -23,6 +23,7 @@
 body {
     color: var(--primary_text-color);
     background-color: var(--primari-bg-color);
+    font-family: 'Roboto', 'Raleway', sans-serif;
 }
 
 ul {
@@ -31,19 +32,16 @@ ul {
 
 .logo-black {
     color: var(--secondary-black-color);
+    font-family: 'Raleway';
 }
 
-.logo-black:hover,
-.logo-black:focus {
-    color: var(--accent_color);
-}
 
 .logo-white {
     color: var(--primary-white-color);
+    font-family: 'Raleway';
 }
 
-.logo-white:hover,
-.logo-white:focus {
+.logo-blue {
     color: var(--accent_color);
 }
 
@@ -67,6 +65,15 @@ ul {
 .auth-nav .link:focus {
     color: var(--accent_color);
 }
+
+
+.hero h1 {
+    Font-family: Roboto;
+    Font-style: Black;
+    Font-size: 44px;
+
+}
+
 
 /* шапка */
 .button {
@@ -110,4 +117,20 @@ ul {
     color: var(--secondary-white-color-opacity);
 }
 
-.portfolio-nav .link {}
+.portfolio-nav .button {
+    color: var(--title-text-color);
+    background-color: var(--secondary-bg-color);
+}
+
+.portfolio-nav .button:hover {
+    color: var(--primary-white-color);
+    background-color: var(--accent_color);
+}
+
+.project-list .title {
+    color: var(--title-text-color);
+}
+
+.project-list .text {
+    color: var(--primary_text-color);
+}
