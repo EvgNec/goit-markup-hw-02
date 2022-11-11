@@ -220,6 +220,15 @@ body {
     font-style: inherit;
 }
 
+.footer-address-contact:hover,
+.footer-address-contact:focus,
+.footer-address-mail:hover,
+.footer-address-mail:focus,
+.footer-address-tel:hover,
+.footer-address-tel:focus {
+    color: var(--accent_color);
+}
+
 /* ------PORTFOLIO  -------- */
 
 /* ------ FILTERS -------- */
