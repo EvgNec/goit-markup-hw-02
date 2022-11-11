@@ -36,8 +36,6 @@ body {
     list-style: none;
 }
 
-
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -55,7 +53,7 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .logo {
@@ -64,24 +62,34 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent_color);
+}
+
+.btn {
+    font-family: inherit;
+    border-radius: 4px;
+    border: 0;
 }
 
 /* ------HEADER-------- */
 .header {
-    background: #FFFFFF;
+    background: var(--primary-white-color);
 }
 
 .header-logo-black {
-    color: #000000;
+    color: var(--secondary-black-color);
 }
 
-.header-link {
+.header-auth-nav {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+}
+
+.header-link {
+
+    color: var(--title-text-color);
 }
 
 .header-link:hover,
@@ -92,11 +100,7 @@ body {
 
 .header-mail,
 .header-tel {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--primary_text-color);
 }
 
 .header-mail:hover,
@@ -109,7 +113,7 @@ body {
 /* ------ HERO -------- */
 .hero {
     /* временно */
-    background: #2F303A;
+    background: var(--primari-black-bg-color);
 }
 
 .hero-title {
@@ -119,7 +123,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--primary-white-color);
 }
 
 .hero-btn {
@@ -131,11 +135,10 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background: #2196F3;
+    color: var(--primary-white-color);
+    background: var(--accent_color);
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -150,15 +153,14 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .property-text {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary_text-color);
 }
 
 /* ------OUR WORK-------- */
@@ -166,11 +168,11 @@ body {
 
 /* ------OUR TEAM-------- */
 .our-team {
-    background: #F5F4FA;
+    background: var(--secondary-bg-color);
 }
 
 .our-team-items {
-    background: #FFFFFF;
+    background: var(--primary-white-color);
 }
 
 .our-team-subtitle {
@@ -179,7 +181,7 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .our-team-text {
@@ -187,39 +189,35 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary_text-color);
 }
 
 /* ------ FOOTER -------- */
 .footer {
-    background: #2F303A;
+    background: var(--primari-black-bg-color);
 }
 
 .footer-logo-white {
-    color: #FFFFFF;
+    color: var(--primary-white-color);
 }
 
 .footer-address-contact {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--primary-white-color);
 }
 
-
+.footer-address-tel,
 .footer-address-mail {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--secondary-white-color-opacity);
 }
 
-
-.footer-address-tel {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+.footer-address {
+    font-style: inherit;
 }
 
 /* ------PORTFOLIO  -------- */
@@ -231,19 +229,15 @@ body {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
-    background: #F5F4FA;
-    border-radius: 4px;
-    border: 0;
+    color: var(--title-text-color);
+    background: var(--secondary-bg-color);
 }
 
 .portfolio_btn:hover,
 .portfolio_btn:focus {
-    color: #FFFFFF;
-    background: #2196F3;
+    color: var(--primary-white-color);
+    background: var(--accent_color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    ;
 }
 
 /* ------ PROJECT -------- */
@@ -258,12 +252,12 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .project-text {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary_text-color);
 }
